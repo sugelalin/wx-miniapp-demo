@@ -1,0 +1,4 @@
+<view>This is Template C!</view>
+<template name="c">
+  <view>Template C Content.</view>
+</template>

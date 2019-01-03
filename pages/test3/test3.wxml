@@ -1,0 +1,24 @@
+<!--pages/test3/test3.wxml-->
+<!-- 模板引用 -->
+
+<template name="tempItem">
+  <view>
+    <view>收件人：{{name}}</view>
+    <view>联系方式：{{phone}}</view>
+    <view>地址：{{address}}</view>
+  </view>
+</template>
+<template is="tempItem" data="{{...item}}"></template>
+
+<!-- import 引用外部文件模板，只渲染代码块 -->
+<import src="a.wxml"></import>
+<template is="a"></template>
+
+<!-- import 引用外部文件模板，不会递归嵌套引用，避免模板引用死循环 -->
+<import src="b.wxml"></import>
+<template is="b"></template>
+
+<!-- include 引用外部文件模板，直接渲染模板文件的内容，不渲染代码块 -->
+<!-- 下面这里渲染出代码块是因为上面的已经import过了 -->
+<include src="a.wxml"/>
+<template is="a"></template>

@@ -1,0 +1,6 @@
+<view>This is Template B!</view>
+<template name="b">
+  <view>Template B Content.</view>
+</template>
+<import src="c.wxml"></import>
+<template name="c"></template>
