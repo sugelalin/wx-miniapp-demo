@@ -1,0 +1,18 @@
+<!--pages/test7/test7.wxml-->
+<!-- 事件 -->
+<!--
+<view>
+  <view class="btn" bindtap="clickMe">点击我</view>
+</view>
+-->
+
+<!-- bind 绑定事件，不会阻止冒泡；catch绑定事件捕获阶段且不再冒泡 -->
+<view class='container-A' bindtap='clickA' capture-bind:tap="captureClickA">
+  container-A
+  <view class='container-B' bindtap='clickB' capture-bind:tap="captureClickB">
+    container-B
+    <view class='container-C' bindtap='clickC' capture-catch:tap="captureClickC">
+      container-C
+    </view>
+  </view>
+</view>

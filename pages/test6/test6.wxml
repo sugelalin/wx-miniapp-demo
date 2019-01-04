@@ -1,0 +1,48 @@
+<!--pages/test6/test6.wxml-->
+<!-- 
+
+Nodejs的JavaScript
+ECMAScript+Native+NPM
+
+浏览器的JavaScript
+ECMAScript+DOM+BOM
+
+小程序的JavaScript
+ECMAScript+小程序框架+小程序API
+
+小程序的JS在不同平台的运行环境
+iOS JavaScriptCore
+Android X5内核
+IDE nwjs（webkit+nodejs）
+
+ -->
+
+ <!--
+    微信小程序开发框架 wxs
+ -->
+ <!-- 内部定义wxs 通过module定义模块名 -->
+<wxs module="m1">
+  module.exports = {
+    message:'hello,world! test6'
+  }
+</wxs>
+<view>{{m1.message}}</view>
+
+<!-- 外部引用wxs  -->
+<wxs src="./m1.wxs" module="m2"></wxs>
+<view>{{m2.message}}</view>
+
+<!-- wxs注释 -->
+<wxs module="m3">
+  var v = 1;
+  module.exports.vaule = v;
+  // 单行注释
+  /* 多行注释
+  v +=1;
+  */
+  console.log(v)
+  /*
+  var d = 3;
+  console.log(d);
+</wxs>
+<view>{{m3.value}}</view>

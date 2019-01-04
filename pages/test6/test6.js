@@ -1,11 +1,10 @@
-// pages/test4/test4.js
+// pages/test6/test6.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    colorValue: 'red'
 
   },
 

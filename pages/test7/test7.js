@@ -1,11 +1,34 @@
-// pages/test4/test4.js
+// pages/test7/test7.js
 Page({
+
+  clickMe(e) {
+    console.log(e);
+  },
+
+  clickA() {
+    console.log('click container-A');
+  },
+  clickB() {
+    console.log('click container-B');
+  },
+  clickC() {
+    console.log('click container-C');
+  },
+  
+  captureClickA() {
+    console.log('capture container-A');
+  },
+  captureClickB() {
+    console.log('capture container-B');
+  },
+  captureClickC() {
+    console.log('capture container-C');
+  },
 
   /**
    * 页面的初始数据
    */
   data: {
-    colorValue: 'red'
 
   },
 

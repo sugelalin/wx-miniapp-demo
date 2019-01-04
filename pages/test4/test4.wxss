@@ -1,1 +1,5 @@
 /* pages/test4/test4.wxss */
+@import './assets.wxss';
+.container {
+  color: red;
+}

@@ -1,0 +1,10 @@
+<!--pages/test5/test5.wxml-->
+<!-- wxss 选择器 -->
+<!-- 选择器优先级
+  !important max 强制声明
+  style 1000  动态样式选择器
+  #element 100 ID选择器
+  .element 10 类选择器
+  element 1 元素标签
+ -->
+ 

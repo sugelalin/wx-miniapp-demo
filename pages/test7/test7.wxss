@@ -1,0 +1,28 @@
+/* pages/test7/test7.wxss */
+.container-A {
+  display: flex;
+  align-items:center;
+  justify-content:end;
+  height:700rpx;
+  width:700rpx;
+  border: 3px solid red;
+  color:black;
+}
+
+.container-B {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height:400rpx;
+  width:400rpx;
+  border: 3px solid greenyellow;
+}
+
+.container-C {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height:200rpx;
+  width:200rpx;
+  border: 3px solid purple;
+}

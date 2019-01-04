@@ -1,1 +1,11 @@
 <!--pages/test4/test4.wxml-->
+<!-- wxss 样式 -->
+<!-- 外联样式 -->
+<view class='container'>
+  Hello World!
+</view>
+
+<!-- 内联样式 -->
+<view style="width:500rpx;height=30px;background-color:{{colorValue}}">
+  Hello World!
+</view>
